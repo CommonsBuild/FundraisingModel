@@ -206,8 +206,13 @@ class Fundraising(pm.Parameterized):
 def abc_debug_app():
 
     # Introduction
-    introduction = """The commonsstack commonsbuild presents,
-    the commons config dashboard.  """
+    introduction = pn.pane.Markdown("""
+### The commonsstack commonsbuild presents
+    The commons config dashboard. 
+
+    See here for more information:
+    https://hackmd.io/HTrPYtZdS1q3uiSg1gFbTw?view
+    """)
 
     # ReserveRatio
     params = {    
